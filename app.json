@@ -1,0 +1,58 @@
+{
+  "expo": {
+    "name": "Skyline Weather",
+    "slug": "skyline-weather",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "scheme": "skylineweather",
+    "userInterfaceStyle": "dark",
+    "newArchEnabled": true,
+    "icon": "./assets/icon.png",
+    "ios": {
+      "supportsTablet": false,
+      "bundleIdentifier": "app.skylineweather.mobile",
+      "infoPlist": {
+        "NSLocationWhenInUseUsageDescription": "Skyline uses your location to show weather for exactly where you are.",
+        "ITSAppUsesNonExemptEncryption": false
+      }
+    },
+    "android": {
+      "package": "app.skylineweather.mobile",
+      "adaptiveIcon": {
+        "foregroundImage": "./assets/adaptive-icon.png",
+        "backgroundColor": "#071522"
+      },
+      "edgeToEdgeEnabled": true,
+      "predictiveBackGestureEnabled": false
+    },
+    "web": {
+      "bundler": "metro",
+      "output": "single",
+      "favicon": "./assets/favicon.png",
+      "name": "Skyline Weather",
+      "shortName": "Skyline",
+      "themeColor": "#071522",
+      "backgroundColor": "#071522"
+    },
+    "plugins": [
+      [
+        "expo-splash-screen",
+        {
+          "image": "./assets/splash-icon.png",
+          "imageWidth": 180,
+          "resizeMode": "contain",
+          "backgroundColor": "#071522",
+          "dark": {
+            "backgroundColor": "#071522"
+          }
+        }
+      ],
+      [
+        "expo-location",
+        {
+          "locationWhenInUsePermission": "Skyline uses your location to show weather for exactly where you are."
+        }
+      ]
+    ]
+  }
+}
